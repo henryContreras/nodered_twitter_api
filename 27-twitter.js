@@ -62,6 +62,8 @@ function TwitterCredentialsNode(n) {
         const endpointUserURL = "https://api.twitter.com/2/users/by?usernames="
 
         async function getRequest() {
+            // Added this to check errors
+            var node = this;
 
             // These are the parameters for the API request
             // specify User names to fetch, and any additional fields that are required
